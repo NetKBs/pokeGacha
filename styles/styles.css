@@ -1,12 +1,32 @@
 #btn-spin {
     margin: 0 auto;
     margin-top: 32px;
+    margin-bottom: 30px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
 
     font-weight: bold;
     font-size: 40px;
+}
+
+#deleteAll {
+    width: 15%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.trash-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.empty-message {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .cards-container {
@@ -19,7 +39,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  
   max-width: 412px;
   max-height: 500px;
   width: 412px;
@@ -28,7 +48,15 @@
   margin: 0 auto;
   margin-bottom: 10px;
   padding: 20px;
+
+  border: 8px solid;
+  border-image: linear-gradient(to right, gold, darkgoldenrod);
+  border-image-slice: 1;
+
+
+
 }
+
 
 
 .card-header {

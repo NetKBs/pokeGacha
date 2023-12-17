@@ -20,6 +20,11 @@ export const clearDB = () => {
     saveCardsData();
 }
 
+export const deleteCard = id => {
+    pokemonsData = pokemonsData.filter(pokemon => pokemon.id !== id);
+    saveCardsData();
+}
+
 
 export const retrieveAPIData = async () => {
     const id = getRandomInt(1, 1017);

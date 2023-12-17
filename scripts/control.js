@@ -1,4 +1,4 @@
-import { retrieveAPIData, saveCardsData, clearDB} from "./model.js"
+import { retrieveAPIData, deleteCard, clearDB} from "./model.js"
 import { displayCardsContainer } from "./view.js";
 
 export const spinGachaBtn = async () => {
@@ -8,4 +8,9 @@ export const spinGachaBtn = async () => {
 export const deleteAll = () => {
     clearDB();
     displayCardsContainer();
+}
+
+export const deleteCardController = id => {
+   deleteCard(id); 
+   displayCardsContainer();
 }

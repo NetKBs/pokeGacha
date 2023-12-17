@@ -5,5 +5,15 @@ import { retrieveCardsData } from "./model.js";
 
 retrieveCardsData();
 displayCardsContainer();
-document.getElementById("btn-spin").addEventListener("click", () => spinGachaBtn());
+
+const boton = document.getElementById("btn-spin");
+boton.addEventListener("click", () => {
+    spinGachaBtn();
+    boton.classList.toggle('spin');
+});
+
+boton.addEventListener("animationend", () => {
+    boton.classList.toggle('spin');
+})
+
 document.getElementById("deleteAll").addEventListener("click", () => deleteAll());

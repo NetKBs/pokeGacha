@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/animations-effect.css">
    <script type="module" src="scripts/index.js" defer></script>
 
     <title>Poke Gacha</title>
@@ -22,45 +23,12 @@
             <button id="btn-spin" class="outline">Spin</button>
         </section>
 
+        <button id ="deleteAll">Vaciar</button>
+
         <section class="cards-container">
-
-            <article class="card">
-
-                <div class="card-header">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-                        alt="imagen header card" class="card-img-header" />
-                    <h1 class="card-header-title">
-                        Yooo Chico
-                    </h1>
-                    <p class="card-body-hp">134 hp</p>
-
-                </div>
-
-                <div class="card-body">
-                    <div class="grid">
-
-                        <div class="card-body-attack">
-                            <h3>80K</h3>
-                            <p>Ataque</p>
-                        </div>
-
-                        <div class="card-footer-special">
-                            <h3>803K</h3>
-                            <p>Ataque Especial</p>
-                        </div>
-
-                        <div class="card-footer-defense">
-                            <h3>1.4K</h3>
-                            <p>Defensa</p>
-                        </div>
-
-                    </div>
-                </div>
-            </article>
         </section>
 
         </div>
-        <button id ="deleteAll">Vaciar</button>
         <footer>
             Todos Los Derechos Reservados
         </footer>
@@ -69,7 +37,8 @@
 
     <template id="card-template">
 
-        <article class="card">
+        <article class="card" id="idCard">
+            <img src="assets/trash.png" class="trash-icon">
 
             <div class="card-header">
                 <img src="#" alt="#" class="card-img-header" />
